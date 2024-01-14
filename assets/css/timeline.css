@@ -6,6 +6,9 @@
 
 }
 
+.vertical-timeline h1,.vertical-timeline h2,.vertical-timeline h3{
+    margin:0px;
+}
 .vertical-timeline {
     padding-top: 20px;
     padding-bottom: 20px;
