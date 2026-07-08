@@ -1,0 +1,29 @@
+{
+  "name": "timeline-react",
+  "version": "0.1.0",
+  "description": "A simple React timeline component ported from static HTML/CSS.",
+  "main": "dist/timeline-react.js",
+  "module": "dist/timeline-react.esm.js",
+  "sideEffects": [
+    "dist/*.css",
+    "assets/**"
+  ],
+  "files": [
+    "dist",
+    "assets",
+    "src"
+  ],
+  "scripts": {
+    "build": "microbundle -i src/index.js -o dist --format cjs,es --name Timeline --sourcemap --jsx React.createElement"
+  },
+  "keywords": ["timeline", "react", "component"],
+  "author": "",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=16",
+    "react-dom": ">=16"
+  },
+  "devDependencies": {
+    "microbundle": "^0.14.0"
+  }
+}

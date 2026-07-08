@@ -1,20 +1,4 @@
-# timeline
-
-A React timeline component repackaged from the existing static HTML/CSS demo.
-
-<div align="center">
-  <img src="https://raw.githubusercontent.com/nima-shokri/timeline/master/assets/img/html-timeline.png?v=1" alt="Timeline Preview" /> 
-</div>
-
-## Install
-
-```bash
-npm install timeline-react
-```
-
-## Usage
-
-```jsx
+import React from 'react';
 import Timeline from 'timeline-react';
 import 'timeline-react/dist/timeline-react.css';
 
@@ -36,18 +20,22 @@ const items = [
     entries: [
       { title: 'Subject', text: 'Example text for 2022.' }
     ]
+  },
+  {
+    year: '2023',
+    side: 'vt-right',
+    colorClass: 'vt-pink',
+    icon: '/assets/img/icons/2.png',
+    entries: [
+      { title: 'Subject', text: 'Example text for 2023.' }
+    ]
   }
 ];
 
 export default function App() {
   return (
-    <div style={{ padding: 20, background: '#212429', minHeight: '100vh' }}>
+    <div style={{ padding: 50, background: '#212429', minHeight: '100vh', overflowX: 'hidden' }}>
       <Timeline items={items} />
     </div>
   );
 }
-```
-
-## Publish Notes
-
-This package has been built with `microbundle`. The npm publish step was attempted but blocked by two-factor authentication/granular access token policy.
