@@ -1,7 +1,7 @@
 {
-  "name": "@nimzy/vertical-timeline",
-  "version": "1.0.0",
-  "description": "A simple React timeline component ported from static HTML/CSS.",
+  "name": "@nimsho/vertical-timeline",
+  "version": "1.0.1",
+  "description": "A simple React vertical timeline component ported from static HTML/CSS.",
   "main": "dist/timeline-react.js",
   "module": "dist/timeline-react.esm.js",
   "sideEffects": [
@@ -14,9 +14,16 @@
     "src"
   ],
   "scripts": {
-    "build": "microbundle -i src/index.js -o dist --format cjs,es --name Timeline --sourcemap --jsx React.createElement"
+    "build": "microbundle -i src/index.js -o dist --format cjs,es --name Timeline --sourcemap --jsx React.createElement",
+    "prepublishOnly": "npm run build",
+    "publish:public": "npm publish --access public"
   },
-  "keywords": ["timeline", "react", "component"],
+  "keywords": [
+    "vartical timeline",
+    "timeline",
+    "react",
+    "component"
+  ],
   "author": "",
   "license": "MIT",
   "peerDependencies": {
@@ -25,5 +32,9 @@
   },
   "devDependencies": {
     "microbundle": "^0.14.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   }
 }
