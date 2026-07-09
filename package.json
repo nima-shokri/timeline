@@ -1,6 +1,6 @@
 {
-  "name": "timeline-react",
-  "version": "0.1.0",
+  "name": "@nimzy/vertical-timeline",
+  "version": "1.0.0",
   "description": "A simple React timeline component ported from static HTML/CSS.",
   "main": "dist/timeline-react.js",
   "module": "dist/timeline-react.esm.js",

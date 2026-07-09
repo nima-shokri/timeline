@@ -1,0 +1,11 @@
+node_modules/
+test-app/
+*.tgz
+index.html
+.npmrc
+package-lock.json
+.git/
+.vscode/
+.DS_Store
+npm-debug.log*
+*.log
